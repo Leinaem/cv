@@ -1,0 +1,154 @@
+.sideBar {
+  background-color: $darkblue;
+  padding: 5px;
+  margin: 0 10px 0 0;
+  min-width: 250px;
+  border-radius: $borderRadius;
+  position: relative;
+  display: grid;
+  grid-template-rows: 250px 1fr 120px;
+  grid-template-areas:
+    "1id"
+    "nav"
+    "social";
+  .id {
+    grid-area: "id";
+    text-align: center;
+    user-select: none;
+    position: relative;
+    .idContent {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      img {
+        border-radius: 50%;
+        width: 50%;
+        box-shadow: 0 0 0 2px #ccf;
+        border: 2px solid $darkblue;
+      }
+      h3 {
+        font-size: 1, 3em;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+  .nav {
+    grid-area: "nav";
+    padding: 2rem 1rem;
+    ul {
+      height: 100%;
+      display: grid;
+      align-items: center;
+      li {
+        padding: 1rem 0 1rem 0.5rem;
+        font-size: 1.3rem;
+        position: relative;
+        .icon {
+          transition: 0.3s ease;
+          vertical-align: middle;
+        }
+        &:hover .icon {
+          transform: translateX(5px);
+          transition: 0.3s ease;
+        }
+        .navActive {
+          color: $whiter;
+        }
+        .pageLabel {
+          margin-left: 1rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .socialNetwork {
+    grid-area: "social";
+    padding: 1.5rem;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      li {
+        border-radius: 50%;
+        background-color: $white;
+        transition: 0.5s ease;
+        padding: 5px;
+        a {
+          svg {
+            font-size: 40px;
+            vertical-align: middle;
+            color: $darkblue;
+            transition: 0.5s ease;
+          }
+        }
+        &:hover {
+          background-color: $whiter;
+          transition: 0.5s ease;
+          svg {
+            color: #0000cf;
+            transition: 0.5s ease;
+          }
+        }
+      }
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sideBar {
+    height: 50px;
+    min-width: 540px;
+    width: 100%;
+    display: block;
+    padding: 0px;
+    border-radius: 0;
+    .id,
+    .socialNetwork {
+      display: none;
+    }
+    .nav {
+      padding: 0.1rem 1rem;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          padding: 0.5rem;
+          .pageLabel {
+            margin-left: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .sideBar {
+    .nav {
+      ul {
+        justify-content: space-around;
+        li {
+          .icon {
+            font-size: 30px;
+          }
+          &:hover .icon {
+            transform: translateX(0px);
+            color: $whiter;
+            transition: 0.5s ease;
+          }
+          .pageLabel {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
