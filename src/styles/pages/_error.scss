@@ -28,9 +28,26 @@
     a {
       color: $black;
       background-color: $white;
-      padding: 10px 20px;
+      padding: 5px 20px 10px;
       border-radius: 10px;
       font-size: 2rem;
+      height: 45px;
+      line-height: 50px;
+      transition: 0.5s;
+      span {
+        vertical-align: middle;
+      }
+      &:hover {
+        background-color: $whiter;
+        transition: 0.5s;
+        span {
+          color: $darkblue;
+        }
+      }
+    }
+    .icon {
+      font-size: 2rem;
+      margin-right: 10px;
     }
   }
 }

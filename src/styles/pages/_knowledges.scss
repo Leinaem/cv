@@ -1,0 +1,178 @@
+.knowledges {
+  .knowledgeContent {
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 35% 1fr 1fr;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+      "Language Experience Experience"
+      "OtherSkills OtherSkills Hobbies";
+    .hobbiesContent,
+    .languageContent,
+    .experienceContent,
+    .otherSkillsContent {
+      background: $darkblue;
+      border-radius: $borderRadius;
+      padding: 0.5rem;
+      h3 {
+        color: $white;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+    }
+    .languageContent {
+      grid-area: Language;
+      margin: 0 0.5rem 0.5rem 0;
+      display: grid;
+      grid-template-rows: 33% 33% 33%;
+      grid-template-columns: 100%;
+      .languageDisplay,
+      .frameworkDisplay,
+      .bddDisplay {
+        position: relative;
+        width: 100%;
+      }
+      .years {
+        color: $white;
+        div {
+          display: flex;
+        }
+        span {
+          width: 24%;
+          &:nth-child(5) {
+            width: 1%;
+          }
+          &:before {
+            content: "";
+            background: rgba(255, 255, 255, 0.3);
+            position: absolute;
+            height: 120px;
+            width: 1px;
+            transform: translate(4px, 20px);
+          }
+        }
+      }
+      .skillContainer {
+        padding: 0 5px;
+        .skill {
+          margin-bottom: 15px;
+          position: relative;
+
+          li {
+            color: $white;
+            margin: 2px;
+          }
+          .bar {
+            height: 0.4rem;
+            background: transparent;
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              background: #f00;
+              height: 0.4rem;
+              width: 0%;
+              animation: line 3s ease-out forwards;
+              @keyframes line {
+                to {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .experienceContent {
+      grid-area: Experience;
+      margin-bottom: 0.5rem;
+
+      .xp {
+        margin-bottom: 1rem;
+
+        h4 {
+          font-size: 1.2rem;
+          margin-bottom: 4px;
+        }
+        h5 {
+          font-size: 1rem;
+          margin-bottom: 3px;
+        }
+      }
+    }
+    .otherSkillsContent {
+      grid-area: OtherSkills;
+      margin-right: 0.5rem;
+      .lists {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "1 2";
+        ul {
+          i {
+            font-size: 10px;
+            width: 15px;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .hobbiesContent {
+      grid-area: Hobbies;
+
+      ul {
+        i {
+          font-size: 10px;
+          width: 15px;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .knowledges {
+    .knowledgeContent {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .knowledges {
+    .knowledgeContent {
+      min-width: 540px;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "Language"
+        "Experience"
+        "OtherSkills"
+        "Hobbies";
+      .hobbiesContent,
+      .languageContent,
+      .experienceContent,
+      .otherSkillsContent {
+        margin: 0 0 0.5rem 0;
+      }
+      .languageContent {
+        .skillContainer {
+          padding-right: 17px;
+        }
+      }
+      .hobbiesContent {
+        .lists {
+          display: grid;
+          grid-template-columns: 50% 50%;
+        }
+      }
+    }
+  }
+}
