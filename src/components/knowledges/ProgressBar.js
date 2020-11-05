@@ -2,7 +2,7 @@ import React from "react";
 
 const ProgressBar = (props) => {
   const { type, title, className } = props;
-  
+
   return (
     <div className={className}>
       <h3>{title}</h3>

@@ -1,0 +1,4 @@
+@mixin networkAnim($timeout) {
+  animation: itemPop 1s forwards;
+  animation-delay: $timeout;
+}
