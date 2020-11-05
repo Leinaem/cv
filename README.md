@@ -1,4 +1,4 @@
-# Getting Started with Seb
+# Getting Started with Seb2
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
