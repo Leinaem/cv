@@ -7,7 +7,7 @@ Using
     -sass
 
 
-# Social network
-    [LinkedIn](https://www.linkedin.com/in/sebastien-aggoune/)
-    [GitHub](https://github.com/Leinaem)
-    [Facebook](https://www.facebook.com/seb.agoun)
+## Social network
+[LinkedIn](https://www.linkedin.com/in/sebastien-aggoune/).
+[GitHub](https://github.com/Leinaem).
+[Facebook](https://www.facebook.com/seb.agoun).
