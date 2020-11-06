@@ -1,5 +1,5 @@
 .sideBar {
-  background-color: $darkblue;
+  background-color: $colorPrimary;
   padding: 5px;
   margin: 0 10px 0 0;
   min-width: 250px;
@@ -26,7 +26,7 @@
         border-radius: 50%;
         width: 50%;
         box-shadow: 0 0 0 2px #ccf;
-        border: 2px solid $darkblue;
+        border: 2px solid $colorPrimary;
       }
       h3 {
         font-size: 1, 3em;
@@ -71,27 +71,16 @@
     padding: 1.5rem;
     ul {
       display: flex;
-      justify-content: space-between;
       margin-bottom: 1rem;
       li {
-        border-radius: 50%;
-        background-color: $white;
-        transition: 0.5s ease;
-        padding: 5px;
+        display: flex;
+        width: 100%;
         a {
+          @include linkColor();
+          padding: 5px;
+          border-radius: 50%;
           svg {
-            font-size: 40px;
             vertical-align: middle;
-            color: $darkblue;
-            transition: 0.5s ease;
-          }
-        }
-        &:hover {
-          background-color: $whiter;
-          transition: 0.5s ease;
-          svg {
-            color: #0000cf;
-            transition: 0.5s ease;
           }
         }
       }

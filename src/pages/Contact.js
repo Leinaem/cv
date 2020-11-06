@@ -36,36 +36,30 @@ const Contact = () => {
         </div>
         <div className="socialNetwork">
           <a
-            href="https://www.google.com"
+            href="https://www.linkedin.com/in/sebastien-aggoune/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <div className="item">
-              <span>LinkedIn</span>
-              <LinkedInIcon fontSize="large" className="icon" />
-            </div>
+            <span>LinkedIn</span>
+            <LinkedInIcon fontSize="large" className="icon" />
           </a>
 
           <a
-            href="https://www.linkedin.com/in/sebastien-aggoune/"
+            href="https://www.facebook.com/seb.agoun"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="item">
-              <span>Facebook</span>
-              <FacebookIcon fontSize="large" className="icon" />
-            </div>
+            <span>Facebook</span>
+            <FacebookIcon fontSize="large" className="icon" />
           </a>
 
           <a
-            href="https://www.linkedin.com/in/sebastien-aggoune/"
+            href="https://github.com/Leinaem/cv"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="item">
-              <span>GitHub</span>
-              <GitHubIcon fontSize="large" className="icon" />
-            </div>
+            <span>GitHub</span>
+            <GitHubIcon fontSize="large" className="icon" />
           </a>
         </div>
       </div>

@@ -1,13 +1,32 @@
-# CV Sébastien AGGOUNE
+# React CV
 
-2020 November
+updated in November 2020.
 
-Using 
-    -ReactJS from create-react-app
-    -sass
+## stack
+* ReactJS from create-react-app
+* Material UI
+* npm
+* Sass
+    * mixins
+    * transitions
+    * grid
+    * flex
+* Code Formatter
+    * ESlint
+    * Prettier
 
+## Install
+```
+npm install
+```
+## Run
+```
+npm start
+```
 
-## Social network
-[LinkedIn](https://www.linkedin.com/in/sebastien-aggoune/).
-[GitHub](https://github.com/Leinaem).
-[Facebook](https://www.facebook.com/seb.agoun).
+### My social network
+__[LinkedIn](https://www.linkedin.com/in/sebastien-aggoune/),__
+
+__[GitHub](https://github.com/Leinaem),__
+
+__[Facebook](https://www.facebook.com/seb.agoun).__

@@ -1,0 +1,4 @@
+@mixin homeItemSlide($timeout) {
+  animation: itemSlide 2s ease forwards;
+  animation-delay: $timeout;
+}

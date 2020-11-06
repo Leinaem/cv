@@ -13,25 +13,25 @@ const SocialNetwork = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedInIcon />
+            <LinkedInIcon fontSize="large" className="icon" />
           </a>
         </li>
         <li>
           <a
-            href="https://www.google.com"
+            href="https://www.facebook.com/seb.agoun"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FacebookIcon />
+            <FacebookIcon fontSize="large" className="icon" />
           </a>
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/sebastien-aggoune/"
+            href="https://github.com/Leinaem/cv"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GitHubIcon />
+            <GitHubIcon fontSize="large" className="icon" />
           </a>
         </li>
       </ul>

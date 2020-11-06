@@ -14,7 +14,7 @@
     .languageContent,
     .experienceContent,
     .otherSkillsContent {
-      background: $darkblue;
+      background: $colorPrimary;
       border-radius: $borderRadius;
       padding: 0.5rem;
       h3 {
@@ -73,7 +73,7 @@
             &:after {
               content: "";
               position: absolute;
-              background: #f00;
+              background: $colorSecondary;
               height: 0.4rem;
               width: 0%;
               animation: line 3s ease-out forwards;

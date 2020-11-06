@@ -1,0 +1,12 @@
+@mixin linkColor() {
+  background: rgba($whiteRGB, 0.8);
+  color: $black;
+  border: 1px solid $black;
+  transition: .3s;
+  &:hover {
+    background: rgba($whiterRGB, 0.8);
+    border-color: $colorSecondary;
+    transition: .6s;
+    color: $colorSecondary;
+  }
+}

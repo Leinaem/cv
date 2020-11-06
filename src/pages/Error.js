@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Icon from "@material-ui/core/Icon";
+import HomeIcon from "@material-ui/icons/Home";
 
 const Error = () => {
   return (
@@ -9,7 +9,7 @@ const Error = () => {
         <h1>404</h1>
         <p>Cette page n'éxiste pas.</p>
         <NavLink exact to="/">
-          <Icon className="icon">home</Icon>
+          <HomeIcon className="icon" fontSize="large" />
           <span className="pageLabel">Accueil</span>
         </NavLink>
       </div>

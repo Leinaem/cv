@@ -1,12 +1,18 @@
 // @import url('https://fonts.googleapis.com/css?family=Montserrat:100,900i');
 // font-family: 'Montserrat', sans-serif;
 
+// COLOR
 $black: #333;
-$white: #bbb;
-$whiter: #eee;
+$white: #ccc;
+$whiteRGB: rgb(187, 187, 187);
+$whiter: #fff;
+$whiterRGB: rgb(238, 238, 238);
+$colorPrimary: #007272;
+$colorPrimaryRGB: rgb(0, 114, 114);
+$colorSecondary: #0033bb;
+
 $borderRadius: 15px;
 $minHeight: 98vh;
-$darkblue: darkblue;
 
 * {
   box-sizing: border-box;
