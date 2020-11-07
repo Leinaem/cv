@@ -23,7 +23,7 @@ const ProgressBar = (props) => {
 
           return (
             <div key={key} className="skill">
-              <li>{item.value}</li>
+              <span>{item.value}</span>
               <div className="bar" style={{ width: barSize }}></div>
             </div>
           );

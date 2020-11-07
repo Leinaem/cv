@@ -48,12 +48,16 @@ const Experience = () => {
       <div className="xp">
         <h4>Stagiaire</h4>
         <h5>MAi 2017 - Septembre 2017</h5>
-        <p>- Création de maquettes, et intégration <b>HTML/CSS</b>.</p>
+        <p>
+          - Création de maquettes, et intégration <b>HTML/CSS</b>.
+        </p>
         <p>
           - Création de modules web en JQuery/AJAX avec choix et utilisations de
           bibliothèques JS selon les besoins.
         </p>
-        <p>- Renforcement des connaissances <b>PHP</b> et <b>MySQL</b>.</p>
+        <p>
+          - Renforcement des connaissances <b>PHP</b> et <b>MySQL</b>.
+        </p>
       </div>
     </div>
   );
