@@ -9,7 +9,7 @@ $whiter: #fff;
 $whiterRGB: rgb(238, 238, 238);
 $colorPrimary: #007272;
 $colorPrimaryRGB: rgb(0, 114, 114);
-$colorSecondary: #0033bb;
+$colorSecondary: #328e8e;
 
 $borderRadius: 15px;
 $minHeight: 98vh;
@@ -25,6 +25,7 @@ body {
   padding: 1rem;
   max-width: 1200px;
   color: $white;
+  height: 100%;
 }
 
 button {

@@ -1,6 +1,6 @@
 .knowledges {
   .knowledgeContent {
-    min-height: calc(100vh - 50px);
+    height: calc(100vh - 2rem);
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -14,18 +14,17 @@
     .languageContent,
     .experienceContent,
     .otherSkillsContent {
-      background: $colorPrimary;
       border-radius: $borderRadius;
       padding: 0.5rem;
       h3 {
-        color: $white;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin-bottom: 1rem;
         text-transform: uppercase;
       }
     }
     .languageContent {
       grid-area: Language;
+      background: $black;
       margin: 0 0.5rem 0.5rem 0;
       display: grid;
       grid-template-rows: 33% 33% 33%;
@@ -87,25 +86,32 @@
         }
       }
     }
+    @include scrollBar();
     .experienceContent {
+      background: $colorPrimary;
       grid-area: Experience;
-      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      overflow: auto;
+      height: calc(100% - .5rem);
 
       .xp {
-        margin-bottom: 1rem;
-
+        margin: 2.5rem 0;
         h4 {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           margin-bottom: 4px;
         }
         h5 {
-          font-size: 1rem;
+          font-size: 1.2rem;
           margin-bottom: 3px;
+        }
+        p {
+          font-size: 1.1rem;
         }
       }
     }
     .otherSkillsContent {
       grid-area: OtherSkills;
+      background: $colorPrimary;
       margin-right: 0.5rem;
       .lists {
         display: grid;
@@ -124,7 +130,7 @@
     }
     .hobbiesContent {
       grid-area: Hobbies;
-
+      background: $black;
       ul {
         i {
           font-size: 10px;
@@ -140,6 +146,7 @@
 @media screen and (max-width: 800px) {
   .knowledges {
     .knowledgeContent {
+      height: calc(100vh - 50px - 1rem);
       margin-top: 0.5rem;
     }
   }
@@ -149,6 +156,8 @@
   .knowledges {
     .knowledgeContent {
       min-width: 540px;
+      max-height: none;
+      height: auto;
       grid-template-columns: 100%;
       grid-template-rows: auto;
       grid-template-areas:
@@ -161,10 +170,19 @@
       .experienceContent,
       .otherSkillsContent {
         margin: 0 0 0.5rem 0;
+        background: $colorPrimary;
+      }
+      .experienceContent {
+        overflow: visible;
       }
       .languageContent {
         .skillContainer {
           padding-right: 17px;
+          .skill .bar {
+            &:after {
+              background: $black;
+            }
+          }
         }
       }
       .hobbiesContent {
