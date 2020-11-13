@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Icon from "@material-ui/core/Icon";
+import HomeIcon from '@material-ui/icons/Home';
+import AssessmentIcon from '@material-ui/icons/Assessment';
+import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 
 const Navigation = () => {
   return (
@@ -8,19 +10,19 @@ const Navigation = () => {
       <ul>
         <li>
           <NavLink exact to="/" activeClassName="navActive">
-            <Icon className="icon">home</Icon>
+            <HomeIcon className="icon" />
             <span className="pageLabel">Accueil</span>
           </NavLink>
         </li>
         <li>
           <NavLink exact to="/knowledges" activeClassName="navActive">
-            <Icon className="icon">analytics</Icon>
+            <AssessmentIcon className="icon" />
             <span className="pageLabel">Compétences</span>
           </NavLink>
         </li>
         <li>
           <NavLink exact to="/contact" activeClassName="navActive">
-            <Icon className="icon">perm_contact_calendar</Icon>
+            <PermContactCalendarIcon className="icon" />
             <span className="pageLabel">Contact</span>
           </NavLink>
         </li>
