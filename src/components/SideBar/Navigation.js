@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import HomeIcon from '@material-ui/icons/Home';
-import AssessmentIcon from '@material-ui/icons/Assessment';
-import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
+import HomeIcon from "@material-ui/icons/Home";
+import AssessmentIcon from "@material-ui/icons/Assessment";
+import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 
 const Navigation = () => {
   return (

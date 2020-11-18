@@ -2,7 +2,7 @@
   background-color: $colorPrimary;
   padding: 5px;
   margin: 0 10px 0 0;
-  min-width: 250px;
+  min-width: 260px;
   border-radius: $borderRadius;
   position: relative;
   display: grid;
@@ -44,23 +44,32 @@
       display: grid;
       align-items: center;
       li {
-        padding: 1rem 0 1rem 0.5rem;
         font-size: 1.3rem;
         position: relative;
-        .icon {
-          transition: 0.3s ease;
-          vertical-align: middle;
-        }
-        &:hover .icon {
-          color: $black;
-          transition: 0.3s ease;
+        a {
+          padding: 5px 20px;
+          border-radius: 20px;
+          display: inline-flex;
+          transition: 0.5s ease;
+          span {
+            color: $white;
+            transition: 0.5s ease;
+          }
+          &:hover {
+            background: $white;
+            transition: 0.5s ease;
+            .icon,
+            span {
+              color: $colorPrimary;
+              transition: 0.5s ease;
+            }
+          }
         }
         .navActive {
           color: $whiter;
         }
         .pageLabel {
-          margin-left: 1rem;
-          vertical-align: middle;
+          margin-left: 0.5rem;
         }
       }
     }

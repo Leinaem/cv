@@ -1,13 +1,10 @@
-// @import url('https://fonts.googleapis.com/css?family=Montserrat:100,900i');
-// font-family: 'Montserrat', sans-serif;
-
 // COLOR
 $black: #333;
 $white: #ccc;
 $whiteRGB: rgb(187, 187, 187);
 $whiter: #fff;
 $whiterRGB: rgb(238, 238, 238);
-$colorPrimary: #198080;
+$colorPrimary: #066b72;
 $colorPrimaryRGB: rgb(0, 114, 114);
 $colorSecondary: #4c9c9c;
 
@@ -26,6 +23,8 @@ body {
   max-width: 1200px;
   color: $white;
   height: 100%;
+  text-shadow: 3px 3px 5px $black;
+  font-family: "Roboto";
 }
 
 button {
@@ -40,6 +39,14 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat";
 }
 
 .fullPageContainer {
