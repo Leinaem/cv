@@ -22,7 +22,7 @@ const Languages = () => {
       ],
     },
     {
-      title: "BDD",
+      title: "SGBD",
       className: "bddDisplay",
       data: [
         { value: "Mysql", xp: 2.5 },
