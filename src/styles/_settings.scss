@@ -26,37 +26,36 @@ body {
   text-shadow: 3px 3px 5px $black;
   font-family: "Roboto";
   a:hover {
-  text-shadow: none;
-
+    text-shadow: none;
   }
-}
 
-button {
-  cursor: pointer;
-}
+  button {
+    cursor: pointer;
+  }
 
-li {
-  list-style-type: none;
-}
+  li {
+    list-style-type: none;
+  }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: $white;
-}
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $white;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Montserrat";
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Montserrat";
+  }
 
-.fullPageContainer {
-  display: flex;
-  .pageContent {
-    width: 100%;
+  .fullPageContainer {
+    display: flex;
+    .pageContent {
+      width: 100%;
+    }
   }
 }
 

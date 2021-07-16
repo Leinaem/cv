@@ -1,6 +1,7 @@
 import React from "react";
 
 const Home = () => {
+  const a = "aa";
   return (
     <div className="home">
       <div className="content">

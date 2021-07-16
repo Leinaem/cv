@@ -6,8 +6,8 @@ import Hobbies from "../components/knowledges/Hobbies";
 
 const Knowledges = () => {
   return (
-    <div class="knowledges">
-      <div class="knowledgeContent">
+    <div className="knowledges">
+      <div className="knowledgeContent">
         <Languages />
         <Experience />
         <OtherSkills />

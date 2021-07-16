@@ -33,10 +33,11 @@ const Languages = () => {
   ];
 
   return (
-    <div class="languageContent">
+    <div className="languageContent">
       {skills.map((item, key) => {
         return (
           <ProgressBar
+            key={key}
             type={item.data}
             title={item.title}
             className={item.className}
